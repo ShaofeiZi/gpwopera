@@ -1,12 +1,19 @@
 {
   "name": "gpwopera",
   "version": "1.0.0",
-  "description": "",
+  "description": "避免运算过程中精度损失",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaofeiZi/gpwopera.git"
+  },
   "author": "",
-  "license": "ISC",
-  "typings": "index.d.ts"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShaofeiZi/gpwopera/issues"
+  },
+  "homepage": "https://github.com/ShaofeiZi/gpwopera#readme"
 }

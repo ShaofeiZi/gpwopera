@@ -1,7 +1,4 @@
 declare namespace gpwopera {
-
-
-
     interface opera extends Number {
         /**
          * 加法
@@ -33,7 +30,7 @@ declare namespace gpwopera {
 }
 
 declare module "gpwopera" {
-    var gpwoper: gpwopera.opera;
+    var gpwopera: gpwopera.opera;
     export = gpwopera;
 }
 
