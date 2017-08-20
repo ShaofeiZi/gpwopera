@@ -3,7 +3,12 @@
  * 
  * 
  */
-(function () {
+;(function (global) {
+    /**
+     * 加法
+     * @param {*} arg1 
+     * @param {*} arg2 
+     */
     function gpwAdd(arg1, arg2) {
         let r1, r2, m, c;
         try {
@@ -36,7 +41,11 @@
     Number.prototype.gpwadd = function (arg) {
         return gpwAdd(this, arg);
     };
-    // 减法
+    /**
+     * 减法
+     * @param {*} arg1
+     * @param {*} arg2
+     */
     function gpwSub(arg1, arg2) {
         let r1, r2, m, n;
         try {
@@ -57,7 +66,11 @@
         return gpwSub(this, arg);
     };
 
-    // 乘法
+    /**
+     * 乘法
+     * @param {*} arg1
+     * @param {*} arg2
+     */
     function gpwMul(arg1, arg2) {
         let m = 0;
         const s1 = arg1.toString();
@@ -76,7 +89,11 @@
         return gpwMul(this, arg);
     };
 
-    // 除法
+    /**
+     * 除法
+     * @param {*} arg1
+     * @param {*} arg2
+     */
     function gpwDiv(arg1, arg2) {
         let t1 = 0, t2 = 0, r1, r2;
         try {
@@ -98,4 +115,4 @@
         return gpwDiv(this, arg);
     };
 }
-)();
+)(this);
