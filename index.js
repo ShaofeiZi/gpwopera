@@ -4,7 +4,7 @@
  * 
  */
 (function () {
-    function accAdd(arg1, arg2) {
+    function gpwAdd(arg1, arg2) {
         let r1, r2, m, c;
         try {
             r1 = arg1.toString().split('.')[1].length;
@@ -34,10 +34,10 @@
         return (arg1 + arg2) / m;
     }
     Number.prototype.gpwadd = function (arg) {
-        return accAdd(this, arg);
+        return gpwAdd(this, arg);
     };
     // 减法
-    function accSub(arg1, arg2) {
+    function gpwSub(arg1, arg2) {
         let r1, r2, m, n;
         try {
             r1 = arg1.toString().split('.')[1].length;
@@ -54,11 +54,11 @@
         return ((arg1 * m - arg2 * m) / m).toFixed(n);
     }
     Number.prototype.gpwsub = function (arg) {
-        return accSub(this, arg);
+        return gpwSub(this, arg);
     };
 
     // 乘法
-    function accMul(arg1, arg2) {
+    function gpwMul(arg1, arg2) {
         let m = 0;
         const s1 = arg1.toString();
         const s2 = arg2.toString();
@@ -73,11 +73,11 @@
         return Number(s1.replace('.', '')) * Number(s2.replace('.', '')) / Math.pow(10, m);
     }
     Number.prototype.gpwmul = function (arg) {
-        return accMul(this, arg);
+        return gpwMul(this, arg);
     };
 
     // 除法
-    function accDiv(arg1, arg2) {
+    function gpwDiv(arg1, arg2) {
         let t1 = 0, t2 = 0, r1, r2;
         try {
             t1 = arg1.toString().split('.')[1].length;
@@ -95,7 +95,7 @@
     }
 
     Number.prototype.gpwdiv = function (arg) {
-        return accDiv(this, arg);
+        return gpwDiv(this, arg);
     };
 }
 )();

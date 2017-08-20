@@ -1,6 +1,6 @@
 interface Number {
-    accAdd(arg1: number, arg2: number): number;
-    accSub(arg1: number, arg2: number): number;
-    accMul(arg1: number, arg2: number): number;
-    accDiv(arg1: number, arg2: number): number;
+    gpwAdd(arg1: number, arg2: number): number;
+    gpwSub(arg1: number, arg2: number): number;
+    gpwMul(arg1: number, arg2: number): number;
+    gpwDiv(arg1: number, arg2: number): number;
 }
